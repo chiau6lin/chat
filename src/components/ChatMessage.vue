@@ -26,16 +26,6 @@ export default {
       type: Array,
       default: () => []
     }
-  },
-  data () {
-    return {
-    }
-  },
-  computed: {
-  },
-  created () {
-  },
-  methods: {
   }
 }
 </script>

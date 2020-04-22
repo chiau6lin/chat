@@ -20,10 +20,6 @@ export default {
       default: () => {}
     }
   },
-  data () {
-    return {
-    }
-  },
   computed: {
     avatarIcon () {
       const avatarUrl = this.item.avatar

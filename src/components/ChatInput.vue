@@ -16,18 +16,10 @@
 
 export default {
   name: 'ChatInput',
-  data () {
-    return {
-    }
-  },
   computed: {
     isChatStarted () {
       return this.room === ''
     }
-  },
-  created () {
-  },
-  methods: {
   }
 }
 </script>

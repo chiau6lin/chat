@@ -26,10 +26,6 @@ export default {
       default: () => []
     }
   },
-  data () {
-    return {
-    }
-  },
   computed: {
     friendCount () {
       return this.$t('friends_list_title', [this.list.length])
@@ -37,7 +33,6 @@ export default {
   },
   methods: {
     enterRoom (item) {
-      console.log(item)
       EventBus.$emit('room', item.roomID)
     }
   }

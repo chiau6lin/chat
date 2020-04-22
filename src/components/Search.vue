@@ -15,10 +15,6 @@
 <script>
 export default {
   name: 'Search',
-  props: {
-    title: String,
-    default: ''
-  },
   data () {
     return {
       isSearch: false

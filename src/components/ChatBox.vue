@@ -13,16 +13,6 @@ export default {
       type: String,
       default: ''
     }
-  },
-  data () {
-    return {
-    }
-  },
-  computed: {
-  },
-  created () {
-  },
-  methods: {
   }
 }
 </script>
