@@ -1,0 +1,29 @@
+/*
+ * breakpoints
+ *
+ * $mobile-media -> Mobile Phone
+ * $pad-media -> Tablet
+ * $nb-media -> Laptop
+ * $pc-media -> Desktop
+ */
+
+$sm-mobile-media: 320px; // iphone4, iphone5/SE
+$mobile-media: 576px;
+$pad-media: 768px;
+$nb-media: 992px;
+$pc-media: 1200px;
+
+// Global
+$error: #be2b2b;
+$modal-zIndex: 100;
+$popup-zIndex: 500;
+$loading-zIndex: 1000;
+
+// // button
+$button-highlight: #1facdc;
+
+// Theme
+$main-theme-color: #4A90E2;
+
+// button
+$button-highlight-color: $main-theme-color;

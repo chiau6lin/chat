@@ -1,0 +1,51 @@
+@import 'variables';
+
+/* mixin media breakpoints
+ *
+ * ```sass 
+ * h1 {
+ *   @include breakpoint(mobile) {
+ *     color: blue;
+ *   };
+ *   @include breakpoint(sm-pad) {
+ *     color: grey;
+ *   };
+ *   @include breakpoint(pad) {
+ *     color: yellow;
+ *   };
+ *   @include breakpoint(nb) {
+ *     color: green;
+ *   };
+ *   @include breakpoint(pc) {
+ *     color: pink;
+ *   };
+ * }
+ * ```
+ */
+@mixin breakpoint($point) {
+  @if $point == pc {
+    @media only screen and (min-width: $pc-media) {
+      @content;
+    }
+  } @else if $point == nb {
+    @media only screen and (min-width: $nb-media) and (max-width: $pc-media - 1) {
+      @content;
+    }
+  } @else if $point == pad {
+    @media only screen and (min-width: $pad-media) and (max-width: $nb-media - 1) {
+      @content;
+    }
+  } @else if $point == sm-pad {
+    @media only screen and (min-width: $mobile-media) and (max-width: $pad-media - 1) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media only screen and (max-width: $mobile-media) {
+      @content;
+    }
+  } @else if $point == sm-mobile {
+    @media only screen and (max-width: $sm-mobile-media) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+// Base objects styles blocks
+// label
+.o-label {
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 3px 10px;
+  @include breakpoint(sm-mobile) {
+    text-align: center;
+    width: 50px;
+    font-size: 12px;
+  };
+}
+
+.o-label--warning {
+  background-color: #ffd48e;
+  color: #4a4a4a;
+}
+
+.o-label--dark {
+  background-color: #d6d8d9;
+  color: #4a4a4a;
+}
+
+// button
+.o-button-group {
+  display: inline-block;
+}
+
+.o-button {
+  display: inline-block;
+  max-width: 147px;
+  // height: 44px;
+  padding: 5px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.o-button--active {
+  color: $button-highlight-color;
+  background: #fff;
+}
+
+.o-button--ok {
+  color: $button-highlight;
+}
+
+// arrow
+.o-icon-arrow {
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  right: 1px;
+  top: 1px;
+  padding: 4px 8px;
+  text-align: center;
+  transition: transform .2s ease;
+
+  &:after {
+    content: "";
+    position: relative;
+    right: 0;
+    top: 55%;
+    color: #999;
+    margin-top: 4px;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #999 transparent transparent;
+  }
+}
+
+.clear {
+  // content: "";
+  display: table;
+  clear: both;
+}

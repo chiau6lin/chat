@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "cGF1bA==",
+    "room_id": 1,
+    "message": "保羅",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 2,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "cGF1bA==",
+    "room_id": 1,
+    "message": "你好, 我是傑西卡",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 3,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "cGF1bA==",
+    "room_id": 1,
+    "message": "我喜歡吃的食物有",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 4,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "cGF1bA==",
+    "room_id": 1,
+    "message": "各種巧克力口味的甜點",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 5,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFjaw==",
+    "room_id": 2,
+    "message": "傑克",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 6,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFjaw==",
+    "room_id": 2,
+    "message": "你好, 我是傑西卡",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 7,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFjaw==",
+    "room_id": 2,
+    "message": "我喜歡吃的食物有",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 8,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFjaw==",
+    "room_id": 2,
+    "message": "游泳,跑步",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 9,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFzb24=",
+    "room_id": 3,
+    "message": "傑森",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 10,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFzb24=",
+    "room_id": 3,
+    "message": "你好, 我是傑西卡",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 11,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFzb24=",
+    "room_id": 3,
+    "message": "我喜歡的動物為",
+    "create_date": "2020-04-21 16:34:10"
+  },
+  {
+    "id": 12,
+    "sender": "amVzc2ljYQ==",
+    "receiver": "amFzb24=",
+    "room_id": 3,
+    "message": "貓,狗",
+    "create_date": "2020-04-21 16:34:10"
+  }
+]
