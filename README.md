@@ -34,6 +34,3 @@ npm run build --report
 * vue-router
 * vuex
 * vue-i18n
-
-### vue plugin
-* vue-js-modal
