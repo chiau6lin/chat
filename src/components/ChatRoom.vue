@@ -8,13 +8,16 @@
     >
       <div class="chat__toolbar">
         <FriendItem :item="activeFriendProfile" />
-        <Search v-model="charSearchText">
-          <span
-            v-show="chatSearchMatchList.length"
-            slot="result"
-            style="font-size: 12px; margin-right: 40px;"
-            >{{ chatSearchCount }}</span>
-        </Search>
+        <div class="chat__function">
+          <Search v-model="charSearchText">
+            <span
+              v-show="chatSearchMatchList.length"
+              slot="result"
+              style="font-size: 12px; margin-right: 40px;"
+              >{{ chatSearchCount }}</span>
+          </Search>
+          <Note />
+        </div>
       </div>
       <ChatMessage :messages="currentChatMessages" v-chat-search="{ target: 'message-id', list: chatSearchMatchList, classStyle: 'hightlight' }"/>
       <ChatInput />
@@ -35,6 +38,7 @@ import { mapGetters } from 'vuex'
 import TheHeader from '@/components/TheHeader'
 import DefaultEmpty from '@/components/DefaultEmpty'
 import Search from '@/components/Search'
+import Note from '@/components/Note'
 import ChatMessage from '@/components/ChatMessage'
 import ChatInput from '@/components/ChatInput'
 import FriendItem from '@/components/FriendItem'
@@ -46,6 +50,7 @@ export default {
     TheHeader,
     DefaultEmpty,
     Search,
+    Note,
     ChatMessage,
     ChatInput,
     FriendItem
@@ -65,11 +70,6 @@ export default {
       charSearchText: ''
     }
   },
-  watch: {
-    charSearchText (val) {
-      console.log(val)
-    }
-  },
   computed: {
     ...mapGetters(['currentChatMessages', 'currentChatFriend']),
     isChatStarted () {
@@ -85,7 +85,6 @@ export default {
     },
     chatSearchMatchList () {
       return this.currentChatMessages.filter((message) => {
-        console.log(message.message.search(this.charSearchText))
         if (!this.charSearchText) {
           return
         }
@@ -96,18 +95,8 @@ export default {
       }, 0)
     },
     chatSearchCount () {
-      // const total = this.currentChatMessages.reduce((count, message) => {
-      //   console.log(message.message.search(this.charSearchText))
-      //   if (message.message.search(this.charSearchText) > -1) {
-      //     return count + 1
-      //   }
-      // }, 0)
       return this.$t('search_result_desc', [this.chatSearchMatchList.length])
     }
-  },
-  created () {
-  },
-  methods: {
   }
 }
 </script>
@@ -143,5 +132,14 @@ export default {
     width: 60px;
     height: 60px;
   }
+
+  /deep/ .note__content {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.chat__function {
+  display: flex;
 }
 </style>
